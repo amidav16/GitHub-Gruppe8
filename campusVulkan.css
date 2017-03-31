@@ -1,0 +1,52 @@
+
+/*DIN Next LT Pro Light*/
+@import url('https://www.fontify.me/wf/5791fea5cf3ff4352ab8e7f3cccc8e23');   
+
+/*DIN Neuzeit Grotesk Bold Cond*/
+@import url('https://www.fontify.me/wf/a43ffc0f9675eb7bb6611c0db69d7ae9');
+
+html, body{
+        background-color: white;           
+        margin: 0;
+        }
+        
+        /* VELDIG nyttig: her blir alt inni containeren effektert ved bruk av container*. Position: absolute vil gjøre at elementene ikke bryr seg om hverandre, men legger seg bak hverandre fremfor å dytte på hverandre*/
+        
+    #headerContainer *{
+        position: absolute;
+        }
+        
+        /*Containeren er "relative", den blir flyttet utfra hvor den dukker opp på skjermen*/
+        
+    #headerContainer{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+        }
+    
+    #topBorder{
+        height: 40px;
+        width: 100%;
+        top: 50px;
+        background-image: url(wHeaderLiten.jpg);
+        position: absolute;
+    }
+    
+    #headerCampus{
+        height: 60px;
+        width: 600px;
+        top: 30px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+#CampusVulkan{
+        font-family: font84115;
+        top: 10px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    
+}
