@@ -1,4 +1,4 @@
-
+/*Kodet av Ine Målbakken*/
 /*DIN Next LT Pro Light*/
 @import url('https://www.fontify.me/wf/5791fea5cf3ff4352ab8e7f3cccc8e23');   
 
@@ -43,7 +43,7 @@ html, body{
 
 ul.meny {
     padding-top: 70px;
-    width: 50%;
+    width: 700px;
     list-style: none;
     background-color: white;
     text-align:center;
@@ -51,17 +51,15 @@ ul.meny {
 }
 .meny li { 
     display: inline-block;
-    width:20%;
-    margin:0;
-    padding:0;
-    
+    width: 20%;
+    margin: 0;
+    padding: 0;
 }
 .meny a {
     text-align:center;
-    padding:12px 5px 12px 5px;
+    padding: 12px 5px 12px 5px;
     margin:0; 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-right: 1px solid black; 
     display:block;
     text-decoration: none;
     color: black;
@@ -75,14 +73,44 @@ li a.active {
 li a:hover:not(.active) {
     background-color: lightgray;
     color: white;
-
-ul.meny li:first-child a{
     border: none;
 }
-ul.meny li:second-child a {
-    border:none;
-}
-ul.meny li:last-child a {
-    border:none;
+
+/*li a:hover:not(.active) {
+    background-color: lightgray;
+    color: white;
+    border: none;
+}*/
+    
+/*    
+ul.meny li:nth-child(even){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
+*/
+
+/* Her følger CSS for små ikoner øverst høyre hjørne */
+
+.pngLinker{
+    top: 70px;
+    right: 70px;
+    width: 45px;
+    height: 45px;
+}
+
+#facebookLogo{
+    right: 220px;
+}
+
+#westerdalsLogo{
+    right: 120px;
+}
+
+#twitterLogo{
+    right: 170px;
+}
+
+.pngLinker:hover:not(.active) {
+    opacity: 0.5;
+}
