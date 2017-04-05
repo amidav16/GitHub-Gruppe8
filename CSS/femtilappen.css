@@ -27,8 +27,8 @@ html, body{
     #topBorder{
         height: 40px;
         width: 100%;
-        top: 20px;
-        background-image: url(wHeaderLiten.jpg);
+        top: 25px;
+        background-image: url(/Bilder/wHeaderLiten.jpg);
         position: absolute;
     }
 
@@ -59,7 +59,7 @@ ul.meny {
     text-align:center;
     padding: 12px 5px 12px 5px;
     margin:0; 
-    border-right: 1px solid black; 
+    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     color: black;
@@ -68,27 +68,17 @@ ul.meny {
 li a.active {
     background-color: black;
     color: white;
-}
+} 
 
 li a:hover:not(.active) {
     background-color: lightgray;
     color: white;
     border: none;
 }
-
-/*li a:hover:not(.active) {
-    background-color: lightgray;
-    color: white;
-    border: none;
-}*/
     
-/*    
-ul.meny li:nth-child(even){
+ul.meny li:nth-child(n+2){
     border-left: 1px solid black;
-    border-right: 1px solid black;
 }
-
-*/
 
 /* Her følger CSS for små ikoner øverst høyre hjørne */
 
@@ -113,20 +103,4 @@ ul.meny li:nth-child(even){
 
 .pngLinker:hover:not(.active) {
     opacity: 0.5;
-}
-
-/* Alt oppe er meny koden her kommer koden til lonningsdag */
-
-#Cyanbox {
-    width: 100%;
-    height: 300px;
-    background-color: rgb(217,244,234);
-    position: relative;
-    
-}
-
-#Whitetext {
-    font-family: monospace;
-    position: absolute;
-    text-align: center;
 }
