@@ -47,7 +47,7 @@ ul.meny {
     list-style: none;
     background-color: white;
     text-align:center;
-    font-family: sans-serif; 
+    font-family: font130013; 
 }
 .meny li { 
     display: inline-block;
@@ -112,4 +112,5 @@ footer{
     background: black;
     text-align: center; 
     clear: both;
+    font-family: font130013; 
 }
