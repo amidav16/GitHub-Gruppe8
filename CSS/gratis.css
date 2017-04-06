@@ -33,7 +33,7 @@ html, body{
     #topBorder{
         height: 40px;
         width: 100%;
-        top: 20px;
+        top: 25px;
         background-image: url(../Bilder/wHeaderLiten.jpg);
         position: absolute;
     }
@@ -62,42 +62,29 @@ ul.meny {
     padding: 0;
 }
 .meny a {
-     text-align:center;
+    text-align:center;
     padding: 12px 5px 12px 5px;
     margin:0; 
-    border-right: 1px solid black; 
+    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     color: black;
 }
 
-
-
-
 li a.active {
     background-color: black;
     color: white;
-}
+} 
 
 li a:hover:not(.active) {
     background-color: lightgray;
     color: white;
     border: none;
 }
-
-/*li a:hover:not(.active) {
-    background-color: lightgray;
-    color: white;
-    border: none;
-}*/
     
-/*    
-ul.meny li:nth-child(even){
+ul.meny li:nth-child(n+2){
     border-left: 1px solid black;
-    border-right: 1px solid black;
 }
-
-*/
 
 /* Her følger CSS for små ikoner øverst høyre hjørne */
 
@@ -129,7 +116,7 @@ ul.meny li:nth-child(even){
 #Greenbox {
     width: 100%;
     height: 250px;
-    background-color: rgb(108,214,163);
+    background-color: rgb(217,244,234);
     position: relative;
     
 }
