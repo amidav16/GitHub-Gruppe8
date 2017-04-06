@@ -104,3 +104,11 @@ ul.meny li:nth-child(n+2){
 .pngLinker:hover:not(.active) {
     opacity: 0.5;
 }
+
+/* FOOTER */
+footer{
+	padding: 20px;
+    color: #ffffff;
+    background: black;
+    text-align: center; 
+}
