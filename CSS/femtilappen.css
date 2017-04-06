@@ -165,3 +165,12 @@ p.mainText {
 	margin: 10px;
 	background-color: lightcyan;
 }
+
+/* FOOTER */
+footer{
+	padding: 20px;
+    color: #ffffff;
+    background: black;
+    text-align: center; 
+    clear: both;
+}
