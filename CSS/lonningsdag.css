@@ -34,7 +34,7 @@ html, body{
         height: 40px;
         width: 100%;
         top: 20px;
-        background-image: url(/Bilder/wHeaderLiten.jpg);
+        background-image: url(../Bilder/wHeaderLiten.jpg);
         position: absolute;
     }
 
