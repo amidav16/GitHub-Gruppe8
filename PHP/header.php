@@ -1,23 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="nettside for studenter ved Westerdals">
-<meta name="author" content="Ine Målbakken">
-
-    <title>Campus Vulkan</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/campusVulkan.css">
-    
-</head>
-
-
-    <body>
-
-        
-    <header>    
+<header>    
         
     <div id="headerContainer">
         <!--<img id="headerCampus" src= "CampusVulkan.PNG" alt="Westerdals Oslo ACT - Campus Vulkan">-->
@@ -53,24 +34,3 @@
 
         <!-- Slutt linker Hovedmeny--> 
     </header>
-        
-        
-        
-        
-        
-        
-        
-    
-    <footer>
-        <div id="footer">
-            
-            <p>&ensp; Adresse: Vulkan 19, 0178 Oslo &ensp;</p>     
-            <p>&ensp; E-post: post@westerdals.no &ensp;</p>  
-            <p>&ensp; Tlf.:22 05 75 50 &ensp;</p> 
-            <p>&ensp; Copyright &copy; gruppe 8 -2017 &ensp;</p>
-            <img id="wLogoFooter" src="Bilder/w.png">
-        </div>
-    </footer>
-
-    </body>
-</html>

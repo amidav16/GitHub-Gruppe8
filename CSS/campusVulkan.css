@@ -27,9 +27,8 @@ html, body{
     #topBorder{
         height: 40px;
         width: 100%;
-        top: 25px;
-        background-image: url(../Bilder/wHeaderLiten.jpg);
-        position: absolute;
+        top: 27px;
+        background-image: url(../Bilder/wHeaderLiten.png);
     }
 
     #CampusVulkan{
@@ -40,10 +39,20 @@ html, body{
         transform: translate(-50%, -50%);
     }
 
+#alleMenyBarn{
+    top 70px;
+    width: 300px;
+    height: 45px;
+    right: 70px;
+}
+#alleMenyBarn*{
+    position: absolute;
+    margin: auto;
+}
 
 ul.meny {
     padding-top: 70px;
-    width: 700px;
+    width: 50%;
     list-style: none;
     background-color: white;
     text-align:center;
@@ -62,6 +71,7 @@ ul.meny {
     /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
+    text-transform: uppercase;
     color: black;
 }
 
@@ -83,7 +93,7 @@ ul.meny li:nth-child(n+2){
 /* Her følger CSS for små ikoner øverst høyre hjørne */
 
 .pngLinker{
-    top: 70px;
+    top: 55px;
     right: 70px;
     width: 45px;
     height: 45px;
@@ -106,11 +116,68 @@ ul.meny li:nth-child(n+2){
 }
 
 /* FOOTER */
-footer{
-	padding: 20px;
-    color: #ffffff;
-    background: black;
-    text-align: center; 
-    clear: both;
-    font-family: font130013; 
+#footer{
+    height: 45px;
+    border-top: 1px solid black;
+    color: black;
+    font-family: font130013;
+    font-size: 12px;
+    width: 100%;
+}
+
+#footer p, img{
+    display: inline-block;
+    float: left;
+    padding: 15px;
+}
+
+#wLogoFooter{
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    left: 25%;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    #headerContainer,
+    #footer p,
+    ul.meny,
+    .meny li,
+    .meny a{
+    float:none;
+    text-align:center;
+    width:100%;
+    border: none;
+  }
+
+    ul.meny{
+        padding: 90px 0 0 0;
+        
+    }
+    
+    #topBorder{
+        top: 42px;
+    }
+    
+    #alleMenyBarn{
+        position: relative;
+        top: 55px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #CampusVulkan{
+        top: 26px;
+    }
+    
+    #wLogoFooter{
+        
+    }
+    
+    #footer p, img{
+    padding: 0;
+    }
 }
