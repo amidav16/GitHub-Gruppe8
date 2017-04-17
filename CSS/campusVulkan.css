@@ -1,9 +1,19 @@
-/*Kodet av Ine Målbakken*/
+/* Header kodet av Ine Målbakken*/
 /*DIN Next LT Pro Light*/
 @import url('https://www.fontify.me/wf/5791fea5cf3ff4352ab8e7f3cccc8e23');   
 
 /*DIN Neuzeit Grotesk Bold Cond*/
 @import url('https://www.fontify.me/wf/a43ffc0f9675eb7bb6611c0db69d7ae9');
+
+/*Lulo Clean One Bold*/
+@import url('https://www.fontify.me/wf/42216a06e8977da4ccec1ff4702d0922');
+
+/*Lucida Console*/
+@import url('https://www.fontify.me/wf/d5b9008d3538aedbecc7c3a8e8b5a3a6');
+
+@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
+/*swanky and moo moo*/
+
 
 html, body{
         background-color: white;           
@@ -181,3 +191,95 @@ ul.meny li:nth-child(n+2){
     padding: 0;
     }
 }
+
+/* Her kommer koden til 50-LAPPEN */
+
+
+
+#Redbox {
+    width: 100%;
+    height: 250px;
+    background-color: #FC6A6D;
+    position: relative;
+    
+}
+
+p.subText {
+    font-family: font71543;
+    top: 10%;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+p.mainText {
+    font-family: font97579;
+    top: 10%;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    margin: 0;
+}
+
+#winPrize{
+	text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: font97579;
+}
+
+#winPrize h1{
+	margin: 20px;
+    font-family: font138488;
+    font-size: 40px;
+}
+
+
+/* BOXES */
+#boxes{
+	margin-top: 40px;
+    position: relative;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+
+#boxes *{
+    postion: absolute;
+}
+
+.box{
+    float: left;
+	text-align: center;
+	width: 177px;
+	padding-right: 2px;
+	margin: 10px;
+	background-color: lightcyan;
+}
+
+/* Her kommer koden til gratis */
+
+#Greenbox {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(217,244,234);
+    position: relative;
+    
+}
+
+/* Her kommer koden til lonningsdag */
+
+#Cyanbox {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(217,244,234);
+    position: relative;
+    
+}
+
+

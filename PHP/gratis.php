@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="nettside for studenter ved Westerdals">
-<meta name="author" content="Ine Målbakken">
+<meta name="description" content="">
+<meta name="author" content="">
 
     <title>Campus Vulkan</title>
     <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css">
@@ -15,14 +15,18 @@
 
 
     <body>
+
         
-        <?php $page = 'one'; include('PHP/header.php'); ?>
+    <?php $page = 'four'; include('header.php'); ?>  
     
+
+        <!-- Slutt linker Hovedmeny--> 
+    <div id="Greenbox">
+    <p class="subText">Ting du kan gjøre helt</p>
+    <p class="mainText">GRATIS</p>  
+        </div>
         
-        <?php require 'PHP/footer.php'; ?>
-        
-        
-    
+    <?php require 'footer.php'; ?>
 
     </body>
 </html>

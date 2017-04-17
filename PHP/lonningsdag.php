@@ -9,14 +9,14 @@
 <meta name="author" content="">
 
     <title>Campus Vulkan</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/lonningsdag.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css">
     
 </head>
 
 
     <body>
 
-    <?php $page = 'two'; include('PHP/header.php'); ?>
+    <?php $page = 'two'; include('header.php'); ?>
     
 
         <!-- Slutt linker Hovedmeny--> 
@@ -25,9 +25,7 @@
     <p class="mainText">UTBETALING!</p>
         </div>
         
-    <footer>
-        <p>Webprosjekt Gruppe 8, Copyright &copy; 2017</p>
-    </footer>
+    <?php require 'footer.php'; ?>
 
     </body>
 </html>
