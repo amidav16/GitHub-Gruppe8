@@ -192,16 +192,13 @@ ul.meny li:nth-child(n+2){
     }
 }
 
-/* Her kommer koden til 50-LAPPEN */
 
-
-
+/* SUBPAGE 50-LAPPEN */
 #Redbox {
     width: 100%;
     height: 250px;
     background-color: #FC6A6D;
     position: relative;
-    
 }
 
 p.subText {
@@ -240,7 +237,7 @@ p.mainText {
 }
 
 
-/* BOXES */
+/* 50-LAPPEN BOXES */
 #boxes{
 	margin-top: 40px;
     position: relative;
@@ -256,11 +253,49 @@ p.mainText {
 .box{
     float: left;
 	text-align: center;
-	width: 177px;
-	padding-right: 2px;
+	width: 180px;
+    height: 220px;
+	padding-right: 10px;
 	margin: 10px;
 	background-color: lightcyan;
 }
+
+#imagePost{
+    height: 160px;
+    width: 160px;
+}
+
+#buttonPostPrize{
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-size: 15px;
+}
+
+
+/* SUBPAGE COMMENTSECTION */
+textarea{
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+    position: relative;
+    left: 20px;
+}
+
+button{
+    position: relative;
+    left: 20px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #282828;
+    border: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 
 /* Her kommer koden til gratis */
 
