@@ -29,6 +29,9 @@
                 <textarea name='message'></textarea><br>
                 <button type='submit 'name='commentSubmit'>Comment</button>
                 </form>";
+
+                getComments($conn);
+                
             ?>
         
         <?php require '../PHP/footer.php'; ?>

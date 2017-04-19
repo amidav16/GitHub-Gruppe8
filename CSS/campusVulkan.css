@@ -257,7 +257,7 @@ p.mainText {
     height: 220px;
 	padding-right: 10px;
 	margin: 10px;
-	background-color: lightcyan;
+	background-color: #FC6A6D;
 }
 
 #imagePost{
@@ -294,6 +294,23 @@ button{
     font-family: arial;
     font-weight: 400;
     cursor: pointer;
+}
+
+.comment-box{
+    width: 384px;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 20px;
+    border: 1px solid black;
+}
+
+.comment-box p{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100;   
 }
 
 
