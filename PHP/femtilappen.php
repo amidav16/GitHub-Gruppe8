@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>Campus Vulkan</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css">
-    
-</head>
-
+        <title>Campus Vulkan</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css"> 
+    </head>
 
     <body>
 
     <?php $page = 'three'; include('header.php'); ?>    
-        
-        
-   
+           
     <div id="Redbox">
         <p class="subText">CHALLENGE:</p>
         <p class="mainText">50-LAPPEN</p>  
@@ -26,19 +22,33 @@
         
     <section id="winPrize">
         <h1>Vinn kaffekort!</h1>
-        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle    og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
+        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
         </p>
     </section>
-        
-    <div id="boxes">
-        <div class="box">
-            
-                <a href="/PHP/commentsection.php"> <img id ="imagePost" src="../Bilder/Kaffekopp.png"></a>
-            
-            <a id="buttonPostPrize" href="/PHP/commentsection.php">Vinn en kaffekopp</a>
-        </div>
-    </div>
-        
+      
+    <a href="/PHP/commentsection.php"  class="addChallengeButton">+</a>
+
+   <section>
+       <div id="box">
+           <div id="imageBox">
+                <a>Her kommer bildene som folk laster opp til konkurransen</a>   
+           </div>
+           <div id="submitterInfoBox">
+               <div id="submitterTitle">
+                    <a id="submitterText">Tittel på bidraget</a>        
+               </div>
+               <div id="submitterName">
+                    <a id="submitterText">Navnet på innsender</a>   
+               </div>
+               <div id="submitterLikes">
+                    <a id="submitterText">Antall likes på bidraget</a>    
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
     <?php require '../PHP/footer.php'; ?>
 
     </body>

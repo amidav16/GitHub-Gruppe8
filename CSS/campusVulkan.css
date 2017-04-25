@@ -133,6 +133,7 @@ ul.meny li:nth-child(n+2){
     font-family: font130013;
     font-size: 12px;
     width: 100%;
+    clear: both;
 }
 
 #footer p, img{
@@ -238,38 +239,49 @@ p.mainText {
 
 
 /* 50-LAPPEN BOXES */
-#boxes{
-	margin-top: 40px;
-    position: relative;
-    width: 80%;
-    height: 600px;
-    margin: auto;
-}
-
-#boxes *{
-    postion: absolute;
-}
-
-.box{
-    float: left;
-	text-align: center;
-	width: 180px;
-    height: 220px;
-	padding-right: 10px;
-	margin: 10px;
-	background-color: #FC6A6D;
-}
-
-#imagePost{
-    height: 160px;
-    width: 160px;
-}
-
-#buttonPostPrize{
+.addChallengeButton {
+    background-color: #FC6A6D;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
     text-decoration: none;
-    text-transform: uppercase;  
-    font-size: 15px;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 100%;
+    position: relative;
+    left: 50%;
 }
+
+#box{
+    height: 300px;
+    width: 23%;
+    background-color: #282828;
+    left: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    float: left;
+    margin: 5px;
+}
+
+#imageBox{
+    height: 200px;
+    width: 100%;
+    background-color: #FC6A6D;
+    position: relative;
+}
+
+#imageBox a{
+    font-size: 40px;
+    color: #fff;
+}
+#submitterText{
+    font-size: 25px;
+    color: #fff;
+}
+
 
 
 /* SUBPAGE COMMENTSECTION */
