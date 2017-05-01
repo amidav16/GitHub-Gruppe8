@@ -1,3 +1,14 @@
+<?php
+    date_default_timezone_set('Europe/Oslo');
+    include '../PHP/dbh.inc.php';
+    include '../PHP/comments.inc.php';
+
+    $sql = "SELECT * FROM comments";
+    $result = $conn->query($sql);
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +19,7 @@
         <meta name="author" content="">
 
         <title>Campus Vulkan</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css"> 
     </head>
 
@@ -21,30 +33,24 @@
     </div>
         
     <section id="winPrize">
-        <h1>Vinn kaffekort!</h1>
-        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
+        <a href="/PHP/commentsection.php"><h1>Vinn kaffekort!</h1></a>
+        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle    og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
         </p>
     </section>
       
-    <a href="/PHP/commentsection.php"  class="addChallengeButton">+</a>
-
    <section>
-       <div id="box">
-           <div id="imageBox">
-                <a>Her kommer bildene som folk laster opp til konkurransen</a>   
-           </div>
-           <div id="submitterInfoBox">
-               <div id="submitterTitle">
-                    <a id="submitterText">Tittel på bidraget</a>        
-               </div>
-               <div id="submitterName">
-                    <a id="submitterText">Navnet på innsender</a>   
-               </div>
-               <div id="submitterLikes">
-                    <a id="submitterText">Antall likes på bidraget</a>    
-               </div>
-           </div>
-       </div>
+      <div class="container">
+        <div class="cards">
+
+          <?php
+              while($row = $result->fetch_assoc())
+              {
+                  include '../PHP/card.php';
+              }
+          ?>
+
+        </div>
+      </div>
    </section>
 
 
