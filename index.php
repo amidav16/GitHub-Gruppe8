@@ -35,7 +35,20 @@
         
         <!--Slutt SlideShow-->
         
-
+        
+        
+            <div class ="grid">
+        
+                <div class="containers">
+                    <div id="Overskrift"><br>Studentsaldo-support!</div>
+                    <div id="Undertekst">Vi støtter deg og din studentsaldo gjennom semesterets oppturer og nedturer...</div>
+                    <div id="Brodtekst">...for vi VET at partyfaktoren er høy og sløsingen fristende idet pengene strømmer inn på konto den 15. hver måned, like mye som vi også kjenner til hvor katastrofalt skrapa kontoen er når det begynner å nærme seg den neste 15. Vi har derfor laget en guide for alle stadier av dette fenomenet, dvs vi trenger *litt* hjelp av DEG, så sjekk ut vår 50-lapp challenge! Kontakt oss gjerne for andre tips og triks også.</div>
+                </div>
+                <div class="containers"><img src=/Bilder/rollercoasterB.png id="Bilder"</a></div>
+            </div>
+        
+        <div id="space"></div> 
+        
         
         <?php require 'PHP/footer.php'; ?>
         
