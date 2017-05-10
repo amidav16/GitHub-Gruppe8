@@ -1,14 +1,15 @@
 <?php
-    date_default_timezone_set('Europe/Oslo');
-    include '../PHP/dbh.inc.php';
-    include '../PHP/comments.inc.php';
 
-    $sql = "SELECT * FROM comments";
-    $result = $conn->query($sql);
+require '../vendor/autoload.php';
+require '../PHP/connection.php';
 
+use Carbon\Carbon;
+
+Carbon::setLocale('no');
+
+$events = Comments::all();
 
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +26,7 @@
 
     <body>
 
-    <?php $page = 'three'; include('header.php'); ?>    
+    <?php $page = 'three'; require('header.php'); ?>    
            
     <div id="Redbox">
         <p class="subText">CHALLENGE:</p>
@@ -34,7 +35,7 @@
         
     <section id="winPrize">
         <a href="/PHP/commentsection.php"><h1>Vinn kaffekort!</h1></a>
-        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle    og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
+        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
         </p>
     </section>
       
@@ -42,11 +43,11 @@
       <div class="container">
         <div class="cards">
 
-          <?php
-              while($row = $result->fetch_assoc())
-              {
-                  include '../PHP/card.php';
-              }
+          <?php 
+              foreach ($events as $event) 
+              { 
+                  require '../PHP/card.php'; 
+              } 
           ?>
 
         </div>
