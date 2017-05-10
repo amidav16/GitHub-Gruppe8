@@ -14,6 +14,14 @@
 @import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
 /*swanky and moo moo*/
 
+/*Summer Fling Medium Overskrift*/
+@import url('https://www.fontify.me/wf/bfe9b63f8c57f2ce8a4fe3b9451178d8');
+
+/*Rabelo Heavy Undertekst*/
+@import url('https://www.fontify.me/wf/51f786f891819f320f153d750cf0fc7f');
+
+/*Unique Light Brødtekst*/
+@import url('https://www.fontify.me/wf/a1924907d51c265f1f5478b7f744203b');
 
 html, body{
         background-color: white;           
@@ -346,4 +354,55 @@ button{
     
 }
 
+.grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2rem;
+}
 
+.containers {
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-size: 500px 300px;
+    overflow: hidden;
+}
+
+#space {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    
+}
+
+/*Tekster og fonter*/
+
+#Bilder {
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+#Overskrift {
+    font-size: 40px;
+    font-family: font143016;
+    text-align: center;
+}
+
+#Undertekst{
+    font-size: 20px;
+    font-family: font143087;
+    font-style: italic;
+    text-align: center;
+}
+
+#Brodtekst {
+    font-size: 16px;
+    font-family: font142997;
+    text-align: center;
+
+}

@@ -9,7 +9,7 @@
 <meta name="author" content="">
 
     <title>Campus Vulkan</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/lonningsdag.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css">
     
 </head>
 
@@ -28,36 +28,43 @@
         
         <div id="space"></div>
     <div class ="grid">
-        <div class="containers">
-            <div id="Overskrift">Seksjon 1.10.32 av "de Finibus Bonorum et Malorum".</div>
-            <div id="Undertekst">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</div>
-            <div id="Brodtekst">Standardavsnittet for Lorem Ipsum, brukt siden 1500-tallet
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit blad isp ciddu dono sekimi fetsois</div>
-            </div>
-        <div class="containers"><img src="http://placehold.it/500x300" id="Bilder"</a></div>
-        <div class="containers">
-        <div id="Overskrift">Seksjon 1.10.32 av "de Finibus Bonorum et Malorum".</div>
-            <div id="Undertekst">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</div>
-            <div id="Brodtekst">Standardavsnittet for Lorem Ipsum, brukt siden 1500-tallet
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit blad isp ciddu dono sekimi fetsois</div>
-            </div>
-        <div class="containers"><img src="http://placehold.it/500x300" id="Bilder"</a></div>
         
         <div class="containers">
-            <div id="Overskrift">Seksjon 1.10.32 av "de Finibus Bonorum et Malorum".</div>
-            <div id="Undertekst">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</div>
-            <div id="Brodtekst">Standardavsnittet for Lorem Ipsum, brukt siden 1500-tallet
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit blad isp ciddu dono sekimi fetsois</div>
+            <div id="Overskrift"><br>Feire utbetaling med deilig mat og drikke!</div>
+            <div id="Undertekst">Bare et steinkast unna skolen finner du Vulkan-passasjen...</div>
+            <div id="Brodtekst">...med både mathall, Champagneria, barer, puber og restauranter. En smule kjedelig når man ikke har noen penger, men desto morsommere så fort pengene kommer inn igjen! Her kan man bare vrake og velge, og du finner deg helt klart flere favoritter her.</div>
             </div>
-        <div class="containers"><img src="http://placehold.it/500x300" id="Bilder"</a></div>
+        <div class="containers"><img src=/Bilder/champagneria.jpg id="Bilder"</a></div>
+        
+        
+        <div class="containers">
+        <div id="Overskrift"><br>Shop i byens beste bruktbutikker!</div>
+            <div id="Undertekst">Det finnes flere gode bruktbutikker i området...</div>
+            <div id="Brodtekst">...faktisk så gode at de er anbefalte som reisemål i flere utenlandske motemagasiner. Hvorfor ikke gjøre miljøet en tjeneste samtidig som du unner deg månedens etterlengtede fashion-statement? Brukt er sjukt (kult!!!)</div>
+            </div>
+        <div class="containers"><img src=/Bilder/fretex.JPG id="Bilder"</a></div>
+        
+        <div class="containers">
+            <div id="Overskrift"><br>Lat som om du er på ferie langs elva!</div>
+            <div id="Undertekst">Atmosfæren og tilbudene langs Akerselva...</div>
+            <div id="Brodtekst">...kan konkurrere med alle storbyer nedover Europa. Her er det bare å ta med seg venner, kamera, eller bare deg selv på en liten miniferie. Sett deg på en av elvas mange kafeer, eller ta en tur på kunstutstilling. Søndager er det marked her, med mange skatter å ta med seg hjem om man har øynene med seg.</div>
+            </div>
+        <div class="containers"><img src=/Bilder/akerselva.JPG id="Bilder"</a></div>
+        
+           <div class="containers">
+            <div id="Overskrift"><br>Arrangementer!</div>
+            <div id="Undertekst">Dessuten finnes det tonnevis med eventer...</div>
+            <div id="Brodtekst">...konserter, forestillinger o.l. det er verdt å få med seg! På Visit Oslo kan du søke deg frem til hva som skjer etter valgt dato. Vi guider deg til riktig underside på VisitOslo her, det eneste du trenger å gjøre er å trykke på bildet ----></div>
+            </div>
+        <div class="containers"><a href = https://www.visitoslo.com/no/aktiviteter-og-attraksjoner/omraader/grunerlokka/hva-skjer/><img src=/Bilder/arrangementer1.JPG id="Bilder"</a></div>
      
         </div>
 
-            
-                
+        <!--alle bilder copyright Fotografine.no-->
+        
+        
+        
+        <div id="space"></div>        
    
     <?php require 'footer.php'; ?>
 
