@@ -11,18 +11,40 @@
     <title>Campus Vulkan</title>
     <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css">
     
+   
+    
 </head>
 
 
     <body>
         
         <?php $page = 'one'; include('PHP/header.php'); ?>
-    
+      
+        
+        <!--Dette gjør så header forsvinner ved scroll-down og popper opp så fort man scroller oppover igjen-->
+        
+        <script src="/JS/scrollHeader.js"></script>
+        
+        
+        
+        <!--Dette er SlideShowet-->
+        
+        <div id="slider"></div>
+        
+        <script src="/JS/slideShow.js"></script>
+        
+        <!--Slutt SlideShow-->
+        
+
         
         <?php require 'PHP/footer.php'; ?>
         
         
-    
+        
 
     </body>
+    
+    
+ 
+    
 </html>

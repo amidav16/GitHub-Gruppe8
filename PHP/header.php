@@ -23,9 +23,9 @@
             
                 <ul class="meny">
                     <li><a <?php echo ($page == 'one') ? "class='active'" : ""; ?> href="/index.php">hjem</a></li><!--
-                    --><li><a <?php echo ($page == 'two') ? "class='active'" : ""; ?> href="/PHP/lonningsdag.php">lønningsdag</a></li><!--
+                    --><li><a <?php echo ($page == 'two') ? "class='active'" : ""; ?> href="/PHP/lonningsdag.php">payday</a></li><!--
                     --><li><a <?php echo ($page == 'three') ? "class='active'" : ""; ?> href="/PHP/femtilappen.php">50-lappen</a></li><!--
-                    --><li><a <?php echo ($page == 'four') ? "class='active'" : ""; ?> href="/PHP/gratis.php">gratis</a></li>
+                    --><li><a <?php echo ($page == 'four') ? "class='active'" : ""; ?> href="/PHP/gratis.php">mayday</a></li>
                 </ul>
              
 
