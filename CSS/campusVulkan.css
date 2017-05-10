@@ -141,12 +141,14 @@ ul.meny li:nth-child(n+2){
     font-family: font130013;
     font-size: 12px;
     width: 100%;
-    clear: both;
+    position: absolute;
 }
+
 
 #footer p, img{
     display: inline-block;
     float: left;
+    margin-left: 7%;
     padding: 15px;
 }
 
@@ -155,7 +157,7 @@ ul.meny li:nth-child(n+2){
     height: 35px;
     padding: 15px;
     border: none;
-    left: 25%;
+    left: 20%;
 }
 
 /* Media Queries */
@@ -164,7 +166,7 @@ ul.meny li:nth-child(n+2){
     #footer p,
     ul.meny,
     .meny li,
-    .meny a{
+    .meny a, #slider, #slider img{
     float:none;
     text-align:center;
     width:100%;
@@ -192,13 +194,21 @@ ul.meny li:nth-child(n+2){
         top: 26px;
     }
     
-    #wLogoFooter{
-        
-    }
     
-    #footer p, img{
+     #footer p, img{
     padding: 0;
     }
+    
+    #footer img{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    
+    #slider{
+        margin-top: 90px;
+        height: 50px;
+    }
+    
 }
 
 /*Kode forside (HJEM)*/
