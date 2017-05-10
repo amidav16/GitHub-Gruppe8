@@ -238,48 +238,109 @@ p.mainText {
 }
 
 
-/* 50-LAPPEN BOXES */
-.addChallengeButton {
-    background-color: #FC6A6D;
-    border: none;
-    color: white;
-    padding: 10px 15px 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px;
-    cursor: pointer;
-    border-radius: 100%;
-    position: relative;
-    left: 50%;
+/* CARDS 50-LAPPEN */
+/* --- Google Fonts --- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+
+/* --- Fonts --- */
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: "Montserrat", "sans-serif";
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+.text-center {
+  text-align: center;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.list-inline li {
+  display: inline-block;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: 20px;
+}
+@media(max-width: 700px){
+.cards{
+  grid-template-columns: 1fr 1fr;
+}
+}
+.card {
+  flex: 0 0 32%;
 }
 
-#box{
-    height: 300px;
-    width: 23%;
-    background-color: #282828;
-    left: 20px;
-    position: relative;
-    margin-bottom: 20px;
-    float: left;
-    margin: 5px;
+/* Cards  */
+.card-body {
+  background: #FC6A6D;
+  padding: 10px;
+  border-radius: 2px;
+}
+.card-picture {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.card-likes {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-likes li {
+  padding: 0 5px;
+}
+.card-likes i {
+  padding-right: 5px;
 }
 
-#imageBox{
-    height: 200px;
-    width: 100%;
-    background-color: #FC6A6D;
-    position: relative;
+.card-hover {
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
-
-#imageBox a{
-    font-size: 40px;
-    color: #fff;
+.card-hover h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 17px;
 }
-#submitterText{
-    font-size: 25px;
-    color: #fff;
+.card-hover p {
+  font-weight: lighter;
+  color: #AAAAAA;
+  font-size: 14px;
+  margin-top: 0px;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card-picture:hover .card-hover {
+  opacity: 1;
 }
 
 
@@ -324,7 +385,6 @@ button{
     color: #282828;
     font-weight: 100;   
 }
-
 
 /* Her kommer koden til gratis */
 
