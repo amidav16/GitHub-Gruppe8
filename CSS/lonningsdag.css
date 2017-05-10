@@ -11,8 +11,8 @@
 /*Lucida Console*/
 @import url('https://www.fontify.me/wf/d5b9008d3538aedbecc7c3a8e8b5a3a6');
 
-@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
 /*swanky and moo moo*/
+@import url('https://www.fontify.me/wf/1167d5dd1156ddd43debbe88efce6bb5');
 
 /*Summer Fling Medium Overskrift*/
 @import url('https://www.fontify.me/wf/bfe9b63f8c57f2ce8a4fe3b9451178d8');
@@ -147,7 +147,7 @@ ul.meny li:nth-child(n+2){
 #footer p, img{
     display: inline-block;
     float: left;
-    padding: 15px;
+
 }
 
 #wLogoFooter{
@@ -219,6 +219,7 @@ p.subText {
     color: white;
     font-size: 35px;
     margin: 0;
+    display: block;
 }
 
 p.mainText {
@@ -230,6 +231,7 @@ p.mainText {
     color: white;
     font-size: 150px;
     margin: 0;
+    display: block;
 }
 
 #winPrize{
@@ -339,12 +341,13 @@ button{
 #Greenbox {
     width: 100%;
     height: 250px;
-    background-color: rgb(217,244,234);
+    background-color: rgb(108,214,163);
     position: relative;
     
 }
 
 /* Her kommer koden til lonningsdag */
+
 
 #Cyanbox {
     width: 100%;
@@ -355,12 +358,11 @@ button{
 }
 
 .grid {
-    width: 80%;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-row-gap: 2rem;
+    grid-row-gap: 15rem;
+
 }
 
 .containers {
@@ -374,8 +376,8 @@ button{
 
 #space {
     position: relative;
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    height: 200px;
     
 }
 
@@ -394,14 +396,14 @@ button{
 }
 
 #Undertekst{
-    font-size: 20px;
+    font-size: 15px;
     font-family: font143087;
     font-style: italic;
     text-align: center;
 }
 
 #Brodtekst {
-    font-size: 16px;
+    font-size: 10px;
     font-family: font142997;
     text-align: center;
 
