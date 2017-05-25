@@ -10,7 +10,6 @@
       events.title, 
       events.description, 
       events.image_path,
-      events.username,
       COUNT(event_likes.id) AS likes
 
       FROM events
@@ -20,10 +19,6 @@
 
       GROUP BY events.id
     ");
-
-
-    //SELECT t1.col, t3.col FROM table1 join table2 ON table1.primarykey = table2.foreignkey//
-                                 // join table3 ON table2.primarykey = table3.foreignkey//
 
     while($row = $eventsQuery->fetch_object())
     {

@@ -1,6 +1,5 @@
 <?php 
 
-
 $db = new mysqli('localhost', 'root', 'root', 'event-manager');
 
 if(!$db)

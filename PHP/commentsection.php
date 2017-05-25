@@ -34,7 +34,10 @@
             <div class='titleForm'>Beskrivelse</div>
             <textarea name='description'></textarea><br>
             <button type='submit' name='commentSubmit'>Comment</button>
-            </form>"; ?>
+            </form>
+            <form method='POST' action='".userLogout()."'> 
+                
+                <button type='submit' name='logoutSubmit'>Log out</button>"; ?>
             </div> <?php
         }
         else
@@ -53,17 +56,7 @@
     
     
     <?php
-    if(isset($_SESSION['id']))
-        { ?>
-            <div class="logInContainer"> <?php
-            echo "<form method='POST' action='".userLogout()."'> 
-                <div class='titleForm'>Logg ut</div>
-                <button type='submit' name='logoutSubmit'>Log out</button>
-            </form>"; ?>
-            </div> <?php 
-            
-        }
-        else
+    if(!isset($_SESSION['id']))
         { ?>
             <div class="logInContainer"> <?php
             echo "<form method='POST' action='".getSignup($db)."'>
@@ -74,7 +67,7 @@
             <input type='password' name='pwd' placeholder='Nytt passord'><br>
             <button type='submit' name='signinSubmit'>Registrer</button>
             </form>"; ?>  
-            </div> <?php    
+            </div> <?php         
         }
     ?>
 
