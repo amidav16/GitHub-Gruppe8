@@ -274,62 +274,77 @@ p.mainText {
 	text-align: center;
     width: 50%;
     margin: auto;
-    font-family: font97579;
+    font-size: 20px;
+    font-family: font143087;
+    font-style: italic;
 }
 
 #winPrize h1{
-	margin: 20px;
-    font-family: font138488;
+    font-family: font143016;
     font-size: 40px;
 }
 
-
-/* 50-LAPPEN BOXES */
-.addChallengeButton {
-    background-color: #FC6A6D;
-    border: none;
-    color: white;
-    padding: 10px 15px 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px;
-    cursor: pointer;
-    border-radius: 100%;
-    position: relative;
-    left: 50%;
+/* CARDS 50-LAPPEN */
+.cardsContainer{
+    margin: 0 auto;
+    max-width: 80%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-#box{
-    height: 300px;
-    width: 23%;
-    background-color: #282828;
-    left: 20px;
-    position: relative;
-    margin-bottom: 20px;
-    float: left;
-    margin: 5px;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: 20px;
 }
 
-#imageBox{
+.card-body{
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.card-picture{
     height: 200px;
-    width: 100%;
-    background-color: #FC6A6D;
-    position: relative;
+    background-size: cover;
 }
 
-#imageBox a{
-    font-size: 40px;
-    color: #fff;
-}
-#submitterText{
-    font-size: 25px;
-    color: #fff;
+.card-title{
+    font-family: font84115;
+    font-size: 25px; 
 }
 
+.card-title h1{
+    margin: 15px;
+}
 
+.card-username{
+    font-family: font84115;
+    font-size: 20px;
+    color: #FC6A6D;
+}
 
+.card-username h3{
+    margin: 15px;   
+}
+
+.card-description{
+    font-family: font84115;
+    font-size: 16px;
+}
+
+.card-description p{
+    margin: 15px;
+}
+
+.card-likes{
+    margin: 15px;
+}
+
+.card-number-likes{
+    margin-left: 10px;
+}
 /* SUBPAGE COMMENTSECTION */
 textarea{
     width: 400px;
@@ -353,24 +368,6 @@ button{
     font-weight: 400;
     cursor: pointer;
 }
-
-.comment-box{
-    width: 384px;
-    padding: 10px;
-    margin-bottom: 5px;
-    position: relative;
-    left: 20px;
-    border: 1px solid black;
-}
-
-.comment-box p{
-    font-family: arial;
-    font-size: 14px;
-    line-height: 16px;
-    color: #282828;
-    font-weight: 100;   
-}
-
 
 /* Her kommer koden til gratis */
 
@@ -442,5 +439,48 @@ button{
     font-size: 16px;
     font-family: font142997;
     text-align: center;
+}
 
+/* FORMS */
+.logInContainer{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 25%;
+    margin: 20px;
+}
+
+input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea{
+    left: 0;
+}
+
+button[type=submit] {
+    width: 100%;
+    left: 0;
+    background-color: #FC6A6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.titleForm{
+    font-family: font84115;
+    font-size: 20px;
+
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }

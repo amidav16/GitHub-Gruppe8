@@ -1,16 +1,17 @@
-<div class="card">
-  <div class="card-body">
-    <div class="card-picture" style="background-image: url('http://unsplash.it/400/300?image=10')">
-      <div class="card-hover">
-        <h4><?= $row['title'] ?></h4>
-        <p><?= $row['message'] ?></p>
-      </div>
+<div class='card'>
+  <div class='card-body'>
+    <div class="card-picture" style="background-image: url('<?= $event->image_path ?>')"></div>
+    <div class='card-title'>
+      <h1><?= $event->title ?></h1>
     </div>
-    <div class="card-likes">
-      <ul class="list-inline">
-        <li><i class="username"></i><?= $row['uid'] ?></li>
-        <li><i class="fa fa-heart"></i><?= $row['likes'] ?></li>
-      </ul>
+    <div class='card-username'>
+      <h3><?= $event->username ?></h3>
+    </div>
+    <div class='card-description'>
+      <p><?= $event->description ?></p>
+    </div>
+    <div class='card-likes'>
+      <a href="like.php?type=event&id=<?php echo $event->id; ?>"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><a class='card-number-likes'><?php echo $event->likes; ?></a>
     </div>
   </div>
 </div>

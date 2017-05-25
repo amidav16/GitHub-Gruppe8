@@ -1,12 +1,34 @@
 <?php
+
     date_default_timezone_set('Europe/Oslo');
-    include '../PHP/dbh.inc.php';
+    require '../PHP/dbh.inc.php';
     include '../PHP/comments.inc.php';
 
-    $sql = "SELECT * FROM comments";
-    $result = $conn->query($sql);
+    $eventsQuery = $db->query("
+      SELECT 
+      events.id, 
+      events.title, 
+      events.description, 
+      events.image_path,
+      events.username,
+      COUNT(event_likes.id) AS likes
+
+      FROM events
+
+      LEFT JOIN event_likes
+      ON events.id = event_likes.event
+
+      GROUP BY events.id
+    ");
 
 
+    //SELECT t1.col, t3.col FROM table1 join table2 ON table1.primarykey = table2.foreignkey//
+                                 // join table3 ON table2.primarykey = table3.foreignkey//
+
+    while($row = $eventsQuery->fetch_object())
+    {
+      $events[] = $row;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -34,20 +56,18 @@
         
     <section id="winPrize">
         <a href="/PHP/commentsection.php"><h1>Vinn kaffekort!</h1></a>
-        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle    og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
+        <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
         </p>
     </section>
       
    <section>
-      <div class="container">
-        <div class="cards">
+      <div class='cardsContainer'>
+        <div class='cards'>
 
-          <?php
-              while($row = $result->fetch_assoc())
-              {
-                  include '../PHP/card.php';
-              }
-          ?>
+          <?php foreach ($events as $event) 
+            { 
+              require 'card.php';
+            } ?>
 
         </div>
       </div>

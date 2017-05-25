@@ -1,8 +1,9 @@
-<?php
+<?php 
 
-$conn = mysqli_connect('localhost', 'root', 'root', 'commentsection');
 
-if (!$conn) 
+$db = new mysqli('localhost', 'root', 'root', 'event-manager');
+
+if(!$db)
 {
 	die("Connection failed: ".mysqli_connect_error());
 }
