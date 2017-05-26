@@ -1,7 +1,6 @@
 <?php
 
 	session_start();
-	echo $_SESSION['id'];
 
     date_default_timezone_set('Europe/Oslo');
     require 'dbh.inc.php';
