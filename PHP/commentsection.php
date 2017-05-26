@@ -35,9 +35,9 @@
             <textarea name='description'></textarea><br>
             <button type='submit' name='commentSubmit'>Legg til bidrag</button>
             </form>
+            
             <form method='POST' action='".userLogout()."'> 
-                
-                <button type='submit' name='logoutSubmit'>Logg Ut</button>"; ?>
+            <button type='submit' name='logoutSubmit'>Logg Ut</button>"; ?>
             </div> <?php
         }
         else

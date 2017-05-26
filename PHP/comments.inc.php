@@ -9,8 +9,9 @@ function setComments($db)
 		$title = $_POST['title'];
 		$description = $_POST['description'];
 		$imagePath = $_POST['image_path'];
+		$username = $_SESSION['id'];
 
-		$sql = "INSERT INTO events (title, description, image_path) VALUES ('$title', '$description', '$imagePath')";
+		$sql = "INSERT INTO events (username, title, description, image_path) VALUES ('$username', '$title', '$description', '$imagePath')";
 		$result = $db->query($sql);
 		header("Location: femtilappen.php");
 	}
@@ -62,7 +63,32 @@ function userLogout()
 	if (isset($_POST['logoutSubmit'])) 
 	{
 		session_destroy();
-		header("Location: commentsection.php");
+		header("Location: femtilappen.php");
 		exit();
 	}
+}
+
+function getQuery()
+{
+	$query = "
+      SELECT 
+      events.id, 
+      events.title, 
+      events.description, 
+      events.image_path,
+      users.uid,
+      COUNT(event_likes.id) AS likes
+
+      FROM events
+
+      LEFT JOIN event_likes
+      ON events.id = event_likes.event
+
+      LEFT JOIN users 
+      ON events.username = users.id
+
+      GROUP BY events.id
+    ";
+
+    return $query;	
 }

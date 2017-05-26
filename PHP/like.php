@@ -11,7 +11,7 @@ if(isset($_GET['type'], $_GET['id']))
 		case 'event':
 			$db->query("
 				INSERT INTO event_likes (user, event)
-					SELECT {$_SESSION['user_id']}, {$id}
+					SELECT {$_SESSION['id']}, {$id}
 					FROM events
 					-- sjekker om artikkelen eksisterer --
 					WHERE EXISTS (
@@ -21,7 +21,7 @@ if(isset($_GET['type'], $_GET['id']))
 					AND NOT EXISTS (
 						SELECT id
 						FROM event_likes
-						WHERE user = {$_SESSION['user_id']}
+						WHERE user = {$_SESSION['id']}
 						AND event = {$id})
 					LIMIT 1
 			");
@@ -29,4 +29,4 @@ if(isset($_GET['type'], $_GET['id']))
 	}
 }
 
-header('Location: ../PHP/femtilappen.php');
+header('Location: femtilappen.php');

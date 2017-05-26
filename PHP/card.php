@@ -5,7 +5,7 @@
       <h1><?= $event->title ?></h1>
     </div>
     <div class='card-username'>
-      <h3>Placeholder</h3>
+      <h3><?= $event->uid ?></h3>
     </div>
     <div class='card-description'>
       <p><?= $event->description ?></p>

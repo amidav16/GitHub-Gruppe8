@@ -172,7 +172,6 @@ ul.meny li:nth-child(n+2){
     width:100%;
     border: none;
   }
-
     ul.meny{
         padding: 90px 0 0 0;
         
@@ -208,13 +207,9 @@ ul.meny li:nth-child(n+2){
         margin-top: 90px;
         height: 50px;
     }
-    
 }
 
 /*Kode forside (HJEM)*/
-
-
-
 #slider {
     position: relative;
     margin: auto;
@@ -236,10 +231,6 @@ ul.meny li:nth-child(n+2){
 #slider img.fadeIn {
     opacity:1;
 }
-
-
-
-
 /* SUBPAGE 50-LAPPEN */
 #Redbox {
     width: 100%;
@@ -284,7 +275,20 @@ p.mainText {
     font-size: 40px;
 }
 
+a, u {
+    text-decoration: none;
+}
+
+.goToReg{
+    font-weight: bolder;
+}
 /* CARDS 50-LAPPEN */
+@media(max-width: 768px){
+    p.mainText {
+        font-size: 100px;
+    }
+}
+
 .cardsContainer{
     margin: 0 auto;
     max-width: 80%;
