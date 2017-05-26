@@ -1,4 +1,31 @@
+<?php
 
+    date_default_timezone_set('Europe/Oslo');
+    require 'dbh.inc.php';
+    include 'comments.inc.php';
+
+        $eventsQuery = $db->query("
+      SELECT 
+      events.id, 
+      events.title, 
+      events.description, 
+      events.image_path,
+      COUNT(event_likes.id) AS likes
+
+      FROM events
+
+      LEFT JOIN event_likes
+      ON events.id = event_likes.event
+
+      GROUP BY events.id
+    ");
+	
+	while($row = $eventsQuery->fetch_object())
+	{
+	  $events[] = $row;
+	}
+
+  ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,7 +50,7 @@
     </div>
         
     <section id="winPrize">
-        <a href="/PHP/commentsection.php"><h1>Vinn kaffekort!</h1></a>
+        <a href="commentsection.php"><h1>Vinn kaffekort!</h1></a>
         <p>Hva kan man gjøre med en 50-lapp? Delta her: (NEI takk, vi vil ikke se penisen din pakket inn i en). Det mest fantasifulle og morsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned - når lommeboken blabla er tom...
         </p>
     </section>

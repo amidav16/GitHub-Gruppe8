@@ -1,7 +1,7 @@
 <?php
     date_default_timezone_set('Europe/Oslo');
-    include '../PHP/dbh.inc.php';
-    include '../PHP/comments.inc.php';
+    include 'dbh.inc.php';
+    include 'comments.inc.php';
     session_start();
 ?>
 
@@ -15,7 +15,7 @@
 <meta name="author" content="Espen Hammer">
 
 <title>Campus Vulkan</title>
-<link rel="stylesheet" type="text/css" href="CSS/campusVulkan.css">
+<link rel="stylesheet" type="text/css" href="../CSS/campusVulkan.css">
 
 </head>
 <body>
