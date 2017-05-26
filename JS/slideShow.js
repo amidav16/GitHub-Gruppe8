@@ -5,9 +5,9 @@
     slider = document.getElementById("slider"),
     slides = slider.childNodes; //get a hook on all child elements, this is live so anything we add will get listed
     imgArray = [
-        '/Bilder/vulkan3.jpg',
-        '/Bilder/vulkan1.jpg',
-        '/Bilder/vulkan2.jpg'];
+        'Bilder/vulkan3.jpg',
+        'Bilder/vulkan1.jpg',
+        'Bilder/vulkan2.jpg'];
 
 
 //

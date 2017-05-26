@@ -4,6 +4,6 @@
             <p>&ensp; E-post: post@westerdals.no &ensp;</p>  
             <p>&ensp; Tlf.:22 05 75 50 &ensp;</p> 
             <p>&ensp; Copyright &copy; gruppe 8 -2017 &ensp;</p>
-            <img id="wLogoFooter" src="/Bilder/w.png">
+            <img id="wLogoFooter" src="http://tek.westerdals.no/~hamesp16/GitHub-Gruppe8/Bilder/w.png">
         </div>
     </footer>

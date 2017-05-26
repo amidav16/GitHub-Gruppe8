@@ -6,12 +6,11 @@ function setComments($db)
 {
 	if (isset($_POST['commentSubmit'])) 
 	{
-		$username = $_POST['username'];
 		$title = $_POST['title'];
 		$description = $_POST['description'];
 		$imagePath = $_POST['image_path'];
 
-		$sql = "INSERT INTO events (username, title, description, image_path) VALUES ('$username', '$title', '$description', '$imagePath')";
+		$sql = "INSERT INTO events (title, description, image_path) VALUES ('$title', '$description', '$imagePath')";
 		$result = $db->query($sql);
 		header("Location: femtilappen.php");
 	}

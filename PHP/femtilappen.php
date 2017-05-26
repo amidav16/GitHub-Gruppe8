@@ -1,30 +1,3 @@
-<?php
-
-    date_default_timezone_set('Europe/Oslo');
-    require '../PHP/dbh.inc.php';
-    include '../PHP/comments.inc.php';
-
-    $eventsQuery = $db->query("
-      SELECT 
-      events.id, 
-      events.title, 
-      events.description, 
-      events.image_path,
-      COUNT(event_likes.id) AS likes
-
-      FROM events
-
-      LEFT JOIN event_likes
-      ON events.id = event_likes.event
-
-      GROUP BY events.id
-    ");
-
-    while($row = $eventsQuery->fetch_object())
-    {
-      $events[] = $row;
-    }
-?>
 
 <!DOCTYPE html>
 <html>
@@ -37,7 +10,7 @@
 
         <title>Campus Vulkan</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/campusVulkan.css"> 
+        <link rel="stylesheet" type="text/css" href="../CSS/campusVulkan.css"> 
     </head>
 
     <body>
@@ -70,7 +43,7 @@
 
 
 
-    <?php require '../PHP/footer.php'; ?>
+    <?php require 'footer.php'; ?>
 
     </body>
 </html>

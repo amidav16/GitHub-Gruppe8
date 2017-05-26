@@ -15,7 +15,7 @@
 <meta name="author" content="Espen Hammer">
 
 <title>Campus Vulkan</title>
-<link rel="stylesheet" type="text/css" href="../CSS/campusVulkan.css">
+<link rel="stylesheet" type="text/css" href="CSS/campusVulkan.css">
 
 </head>
 <body>
@@ -33,11 +33,11 @@
             <input type='text' name='image_path'><br>
             <div class='titleForm'>Beskrivelse</div>
             <textarea name='description'></textarea><br>
-            <button type='submit' name='commentSubmit'>Comment</button>
+            <button type='submit' name='commentSubmit'>Legg til bidrag</button>
             </form>
             <form method='POST' action='".userLogout()."'> 
                 
-                <button type='submit' name='logoutSubmit'>Log out</button>"; ?>
+                <button type='submit' name='logoutSubmit'>Logg Ut</button>"; ?>
             </div> <?php
         }
         else
@@ -47,7 +47,7 @@
                 <div class='titleForm'>Logg inn her om du allerede har en bruker</div>
                 <input type='text' name='uid' placeholder='Ditt brukernavn'><br>
                 <input type='password' name='pwd' placeholder='Ditt passord'><br>
-                <button type='submit' name='loginSubmit'>Log Inn</button>
+                <button type='submit' name='loginSubmit'>Logg Inn</button>
             </form>"; ?>
             </div> <?php   
         }
