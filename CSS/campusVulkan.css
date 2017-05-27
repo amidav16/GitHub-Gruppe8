@@ -24,38 +24,36 @@
 @import url('https://www.fontify.me/wf/a1924907d51c265f1f5478b7f744203b');
 
 html, body{
-        background-color: white;           
-        margin: 0;
-        }
-        
-        
-    #headerContainer *{
-        position: absolute;
-        margin: 0;
-        }
-        
-        
-    #headerContainer{
-        position: relative;
-        margin: auto;
-        width: 100%;
-        background-color: white;
-        }
-    
-    #topBorder{
-        height: 40px;
-        width: 100%;
-        top: 27px;
-        background-image: url(../Bilder/wHeaderLiten.png);
-    }
+    background-color: white;           
+    margin: 0;
+}
+      
+#headerContainer *{
+    position: absolute;
+    margin: 0;
+}
 
-    #CampusVulkan{
-        font-family: font84115;
-        top: 10px;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-    }
+#headerContainer{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+}
+
+#topBorder{
+    height: 40px;
+    width: 100%;
+    top: 27px;
+    background-image: url(../Bilder/wHeaderLiten.png);
+}
+
+#CampusVulkan{
+    font-family: font84115;
+    top: 10px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
 
 #alleMenyBarn{
     top 70px;
@@ -63,6 +61,7 @@ html, body{
     height: 45px;
     right: 50px;
 }
+
 #alleMenyBarn*{
     position: absolute;
     margin: auto;
@@ -76,17 +75,18 @@ ul.meny {
     text-align:center;
     font-family: font130013; 
 }
+
 .meny li { 
     display: inline-block;
     width: 20%;
     margin: 0;
     padding: 0;
 }
+
 .meny a {
     text-align:center;
     padding: 12px 5px 12px 5px;
     margin:0; 
-    /*border-right: 1px solid black; */
     display:block;
     text-decoration: none;
     text-transform: uppercase;
@@ -108,8 +108,8 @@ ul.meny li:nth-child(n+2){
     border-left: 1px solid black;
 }
 
-/* Her følger CSS for små ikoner øverst høyre hjørne */
 
+/* Her følger CSS for små ikoner øverst høyre hjørne */
 .pngLinker{
     top: 55px;
     right: 70px;
@@ -133,6 +133,7 @@ ul.meny li:nth-child(n+2){
     opacity: 0.5;
 }
 
+
 /* FOOTER */
 #footer{
     height: 45px;
@@ -143,7 +144,6 @@ ul.meny li:nth-child(n+2){
     width: 100%;
     position: absolute;
 }
-
 
 #footer p, img{
     display: inline-block;
@@ -171,10 +171,10 @@ ul.meny li:nth-child(n+2){
     text-align:center;
     width:100%;
     border: none;
-  }
+    }
+
     ul.meny{
-        padding: 90px 0 0 0;
-        
+        padding: 90px 0 0 0; 
     }
     
     #topBorder{
@@ -193,7 +193,6 @@ ul.meny li:nth-child(n+2){
         top: 26px;
     }
     
-    
      #footer p, img{
     padding: 0;
     }
@@ -209,6 +208,7 @@ ul.meny li:nth-child(n+2){
     }
 }
 
+
 /*Kode forside (HJEM)*/
 #slider {
     position: relative;
@@ -218,6 +218,7 @@ ul.meny li:nth-child(n+2){
     height: 500px;
     margin-top: 35px;
 }
+
 #slider img {
     transition: opacity 3s;
     position: absolute;
@@ -228,10 +229,13 @@ ul.meny li:nth-child(n+2){
     margin: 0;
     padding: 0;
 }
+
 #slider img.fadeIn {
     opacity:1;
 }
-/* SUBPAGE 50-LAPPEN */
+
+
+/* Kode 50-LAPPEN */
 #Redbox {
     width: 100%;
     height: 250px;
@@ -282,7 +286,9 @@ a, u {
 .goToReg{
     font-weight: bolder;
 }
-/* CARDS 50-LAPPEN */
+
+
+/* Kode Cards 50-LAPPEN */
 @media(max-width: 768px){
     p.mainText {
         font-size: 100px;
@@ -309,6 +315,7 @@ a, u {
     border: 1px solid #f2f2f2;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 }
+
 .card-picture{
     height: 200px;
     background-size: cover;
@@ -349,7 +356,9 @@ a, u {
 .card-number-likes{
     margin-left: 10px;
 }
-/* SUBPAGE COMMENTSECTION */
+
+
+/* Kode Commentsection */
 textarea{
     width: 400px;
     height: 80px;
@@ -373,24 +382,23 @@ button{
     cursor: pointer;
 }
 
-/* Her kommer koden til gratis */
 
+/* Her kommer koden til gratis */
 #Greenbox {
     width: 100%;
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
-    
+   
 }
 
-/* Her kommer koden til lonningsdag */
 
+/* Her kommer koden til lonningsdag */
 #Cyanbox {
     width: 100%;
     height: 250px;
     background-color: rgb(217,244,234);
     position: relative;
-    
 }
 
 .grid {
@@ -418,8 +426,8 @@ button{
     
 }
 
-/*Tekster og fonter*/
 
+/*Tekster og fonter*/
 #Bilder {
     width: 500px;
     height: 300px;
@@ -445,7 +453,8 @@ button{
     text-align: center;
 }
 
-/* FORMS */
+
+/* Kode Forms */
 .logInContainer{
     border-radius: 5px;
     background-color: #f2f2f2;

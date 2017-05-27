@@ -5,10 +5,10 @@ include 'dbh.inc.php';
 
 if (isset($_POST['commentSubmit'])) 
 	{
-		$title = $_POST['title'];
-		$description = $_POST['description'];
-		$imagePath = $_POST['image_path'];
-		$username = $_SESSION['id'];
+		$title = mysqli_escape_string($db, $_POST['title']);
+		$description = mysqli_escape_string($db, $_POST['description']);
+		$imagePath = mysqli_escape_string($db, $_POST['image_path']);
+		$username = mysqli_escape_string($db, $_SESSION['id']);
 
 		$sql = "INSERT INTO events (username, title, description, image_path) VALUES ('$username', '$title', '$description', '$imagePath')";
 		$result = $db->query($sql);

@@ -5,8 +5,8 @@ include 'dbh.inc.php';
 
 	if (isset($_POST['loginSubmit'])) 
 	{
-		$uid = $_POST['uid'];
-		$pwd = $_POST['pwd'];
+		$uid = mysqli_escape_string($db, $_POST['uid']);
+		$pwd = mysqli_escape_string($db, $_POST['pwd']);
 
 		$sql = "SELECT * FROM users WHERE uid='$uid' AND pwd='$pwd'";
 		$result = $db->query($sql);

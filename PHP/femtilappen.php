@@ -30,36 +30,32 @@
     </head>
 
     <body>
-
-    <?php $page = 'three'; include('header.php'); ?>    
-           
-    <div id="Redbox">
-        <p class="subText">CHALLENGE:</p>
-        <p class="mainText">50-LAPPEN</p>  
-    </div>
-        
-    <section id="winPrize">
-        <h1><a href="commentsection.php">Vinn kaffekort!</a></h1>
-        <p>Hva kan man gjøre med en 50-lapp? Vi trenger DITT verdifulle og unike forslag til hva man kan bruke en 50-lapp til! Det mest fantasifulle og/eller hjelpsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned – når lommeboken er slunken og gratis kaffe blir som sendt fra oven ❤ Delta 
-        <a class="goToReg" href="commentsection.php">HER!</a></p>
-    </section>
-      
-   <section>
-      <div class="cardsContainer">
-        <div class="cards">
-
-          <?php foreach ($events as $event) 
-            { 
-              require 'card.php';
-            } ?>
-
+        <?php $page = 'three'; include('header.php'); ?>    
+               
+        <div id="Redbox">
+            <p class="subText">CHALLENGE:</p>
+            <p class="mainText">50-LAPPEN</p>  
         </div>
-      </div>
-   </section>
+            
+        <section id="winPrize">
+            <h1><a href="commentsection.php">Vinn kaffekort!</a></h1>
+            <p>Hva kan man gjøre med en 50-lapp? Vi trenger DITT verdifulle og unike forslag til hva man kan bruke en 50-lapp til! Det mest fantasifulle og/eller hjelpsomme bidraget vinner et kaffekort fra kantina. Vi trekker én vinner den 10. hver måned – når lommeboken er slunken og gratis kaffe blir som sendt fra oven ❤ Delta 
+            <a class="goToReg" href="commentsection.php">HER!</a></p>
+        </section>
+          
+        <section>
+            <div class="cardsContainer">
+                <div class="cards">
 
+                    <?php foreach ($events as $event) 
+                    { 
+                        require 'card.php';
+                    } ?>
 
+                </div>
+            </div>
+        </section>
 
-    <?php require 'footer.php'; ?>
-
+        <?php require 'footer.php'; ?>
     </body>
 </html>
