@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 require_once 'dbh.inc.php';
 if(isset($_GET['type'], $_GET['id']))
 {

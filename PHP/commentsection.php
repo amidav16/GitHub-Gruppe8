@@ -1,7 +1,7 @@
 <?php
     date_default_timezone_set('Europe/Oslo');
     include 'dbh.inc.php';
-    include 'comments.inc.php';
+    include 'functions.php';
     session_start();
 ?>
 
@@ -26,7 +26,7 @@
         if(isset($_SESSION['id']))
         { ?>
             <div class="logInContainer"> <?php
-            echo "<form method='POST' action='".setComments($db)."'>
+            echo "<form method='POST' action='createevent.php'>
             <div class='titleForm'>Tittel</div>
             <input type='text' name='title'><br>
             <div class='titleForm'>URL til bilde</div>
@@ -36,14 +36,14 @@
             <button type='submit' name='commentSubmit'>Legg til bidrag</button>
             </form>
             
-            <form method='POST' action='".userLogout()."'> 
+            <form method='POST' action='logout.php'> 
             <button type='submit' name='logoutSubmit'>Logg Ut</button>"; ?>
             </div> <?php
         }
         else
         { ?>
             <div class="logInContainer"> <?php
-            echo "<form method='POST' action='".getLogin($db)."'>
+            echo "<form enctype='multipart/form-data' method='POST' action='login.php'>
                 <div class='titleForm'>Logg inn her om du allerede har en bruker</div>
                 <input type='text' name='uid' placeholder='Ditt brukernavn'><br>
                 <input type='password' name='pwd' placeholder='Ditt passord'><br>
@@ -59,7 +59,7 @@
     if(!isset($_SESSION['id']))
         { ?>
             <div class="logInContainer"> <?php
-            echo "<form method='POST' action='".getSignup($db)."'>
+            echo "<form method='POST' action='signup.php'>
             <div class='titleForm'>Registrer deg for å bli med i konkurransen</div>
             <input type='text' name='first' placeholder='Fornavn'><br>
             <input type='text' name='last' placeholder='Etternavn'><br>

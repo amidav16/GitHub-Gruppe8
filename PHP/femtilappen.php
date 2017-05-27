@@ -4,7 +4,7 @@
 
     date_default_timezone_set('Europe/Oslo');
     require 'dbh.inc.php';
-    include 'comments.inc.php';
+    include 'functions.php';
 
     $eventsQuery = $db->query(getQuery());
 	
@@ -14,6 +14,7 @@
 	}
 
   ?>
+
 <!DOCTYPE html>
 <html>
     <head>
